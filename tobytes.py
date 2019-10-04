@@ -59,7 +59,8 @@ assembly_instructions = [
         AssemblyInstruction('DXYN', r'^[\s]*[Ss][Hh][Oo][Ww][\s]+(?P<N>(h|0x){0,1}[a-fA-F\d]+)[\s\w]*@[\s]*[Vv](?P<X>[a-fA-F\d]{1})[Xx,\s]*[Vv](?P<Y>[a-fA-F\d]{1})'),
         AssemblyInstruction('EX9E', r'^[\s]*[Ss][Kk][Ii][Pp][\s;:]+[Vv](?P<X>[a-fA-F\d]{1})[\s]*([Ee][Qq]([Uu][Aa][Ll](-{0,1}[Tt][Oo]){0,1}){0,1}|={1,2})[\s]*[Kk]([Ee][Yy]){0,1}'),
         AssemblyInstruction('EXA1', r'^[\s]*[Ss][Kk][Ii][Pp][\s;:]+[Vv](?P<X>[a-fA-F\d]{1})[\s]*([Nn][Ee]|!=)[\s]*[Kk]([Ee][Yy]){0,1}'),
-        AssemblyInstruction('FX07', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*=[\s]*([Tt][Ii][Mm][Ee]|[Dd][Ee][Ll][Aa][Yy])'),
+        AssemblyInstruction('FX07', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*=[\s]*([Tt][Ii][Mm][Ee][Rr]{0,1}|[Dd][Ee][Ll][Aa][Yy])'),
+        AssemblyInstruction('FX15', r'^[\s]*([Tt][Ii][Mm][Ee][Rr]{0,1}|[Dd][Ee][Ll][Aa][Yy])[\s]*=[\s]*[Vv](?P<X>[a-fA-F\d]{1})'),
         ]
 
 

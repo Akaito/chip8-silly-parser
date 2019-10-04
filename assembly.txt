@@ -30,3 +30,13 @@ v9=1
 skip v9 eq 1        Step 7:
 GoTO 0x226                  Step 5
 V0 = TIME           Step 8:
+skip v0 eq 0
+go h226                     Step 5
+I = h278            Step 9: Rocket pattern
+show 6@V7V8                 Erase rocket
+V8 += 0xFF
+show 6@V7V8
+skip Vf eQ h0
+go h262                     Step 12
+v0=3               Step 10:
+time = v0
