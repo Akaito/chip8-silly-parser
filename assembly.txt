@@ -1,0 +1,6 @@
+V1=0                Step 1: Score
+V2 = 0                      Rocket count
+ V3  =h38                    Score X
+	V4	=	0x1B              Score Y
+    V5=00 ; comment!        UFO X
+V6= 8                       UFO Y
