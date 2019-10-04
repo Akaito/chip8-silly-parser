@@ -55,3 +55,4 @@ I=h2a0             SSS:     3 byte work area
 MI=V1 (3-digit binary-coded decimal)
 I=h2a2                      Least significant digit
 V0:V0=MI
+I=sprite V0 (LSDP)
