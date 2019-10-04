@@ -24,3 +24,5 @@ V5 += V0                    Set VF (This comment seems wrong...)
 show 3@V5V6
 skip VF EQ 0
 go h262                     Step 12 if hit
+V0 = hf             Step 6:
+skip v0 ne KEY
