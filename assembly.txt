@@ -9,3 +9,4 @@ SHOW 3MI@V5V6               UFO
 DO h26A             Step 2: Show score
 SKIP; V2 NE 9
 GO h214             Step 3: End loop
+V2+=01              Step 4:
