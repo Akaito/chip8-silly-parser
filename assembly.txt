@@ -7,3 +7,4 @@ V6= 8                       UFO Y
 I = h27E                    UFO pattern
 SHOW 3MI@V5V6               UFO
 DO h26A             Step 2: Show score
+SKIP; V2 NE 9
