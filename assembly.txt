@@ -58,3 +58,4 @@ V0:V0=MI
 I=sprite V0 (LSDP)
 show 5MI@V3V4
 RET
+do h70             ROCK:

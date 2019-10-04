@@ -37,7 +37,7 @@ class AssemblyInstruction(object):
                 elif len(key) == 2:
                     assert num <= 0xFF, "Overflow of 8-bit constant.  Seen in [{}].".format(line)
                 elif len(key) == 3:
-                    assert num >= 0x200, "Memory below 0x200 is reserved.  Attempt to address it seen in [{}].".format(line)
+                    #assert num >= 0x200, "Memory below 0x200 is reserved.  Attempt to address it seen in [{}].".format(line)
                     assert num <= 0xFFF, "Attempt to address outside end of system memory at 0xFFF.  Seen in [{}].".format(line)
                 part = ('{:0>' + str(len(key)) + '}').format(hex(num)[2:]).upper()
             result = result.replace(key, part)
