@@ -45,7 +45,9 @@ class AssemblyInstruction(object):
 
 
 assembly_instructions = [
-        AssemblyInstruction('6XNN', r'^[\s]*V(?P<X>[0-9a-fA-F]{1,2})[\s]*=[\s]*(?P<NN>(h|0x){0,1}[a-fA-F\d]+)'),
+        AssemblyInstruction('6XNN', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*=[\s]*(?P<NN>(h|0x){0,1}[a-fA-F\d]+)'),
+        AssemblyInstruction('ANNN', r'^[\s]*[Ii][\s]*=[\s]*(?P<NNN>(h|0x){0,1}[a-fA-F\d]+)'),
+        AssemblyInstruction('DXYN', r'^[\s]*[Ss][Hh][Oo][Ww][\s]+(?P<N>[a-fA-F\d]{1})[\s\w]*@[\s]*[Vv](?P<X>[a-fA-F\d]{1})[Xx,\s]*[Vv](?P<Y>[a-fA-F\d]{1})'),
         ]
 
 

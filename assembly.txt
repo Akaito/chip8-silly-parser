@@ -4,3 +4,5 @@ V2 = 0                      Rocket count
 	V4	=	0x1B              Score Y
     V5=00 ; comment!        UFO X
 V6= 8                       UFO Y
+I = h27E                    UFO pattern
+SHOW 3MI@V5V6               UFO
