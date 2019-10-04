@@ -59,3 +59,7 @@ I=sprite V0 (LSDP)
 show 5MI@V3V4
 RET
 do h70             ROCK:
+v0 += hF8                   Rocket pattern
+show 8@V8V8
+VC += hD6          UFO:     UFO Pattern
+VC += 0
