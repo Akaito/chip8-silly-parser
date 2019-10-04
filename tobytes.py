@@ -51,6 +51,8 @@ assembly_instructions = [
         AssemblyInstruction('6XNN', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*=[\s]*(?P<NN>(h|0x){0,1}[a-fA-F\d]+)'),
         AssemblyInstruction('7XNN', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*\+=[\s]*(?P<NN>(h|0x){0,1}[a-fA-F\d]+)'),
         AssemblyInstruction('7XNN', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*=[\s]*[Vv]\1[\s]*\+[\s]*(?P<NN>(h|0x){0,1}[a-fA-F\d]+)'),
+        AssemblyInstruction('8XY4', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*\+=[\s]*[Vv](?P<Y>[a-fA-F\d]{1})'),
+        AssemblyInstruction('8XY4', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*=[\s]*[Vv]\1[\s]*\+[\s]*[Vv](?P<Y>[a-fA-F\d]{1})'),
         AssemblyInstruction('ANNN', r'^[\s]*[Ii][\s]*=[\s]*(?P<NNN>(h|0x){0,1}[a-fA-F\d]+)'),
         AssemblyInstruction('CXNN', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*=[\s]*[Rr][Aa]{0,1}[Nn][Dd]([Oo][Mm]){0,1}[\s]*&{0,1}[\s]*(?P<NN>(h|0x){0,1}[a-fA-F\d]+)'),
         AssemblyInstruction('DXYN', r'^[\s]*[Ss][Hh][Oo][Ww][\s]+(?P<N>(h|0x){0,1}[a-fA-F\d]+)[\s\w]*@[\s]*[Vv](?P<X>[a-fA-F\d]{1})[Xx,\s]*[Vv](?P<Y>[a-fA-F\d]{1})'),

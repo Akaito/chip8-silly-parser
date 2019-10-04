@@ -13,3 +13,11 @@ V2+=01              Step 4:
 V8 = 0x1A                   Rocket Y
 VA = 0
 V7 = RND h1f
+V7 += hF                    Rocket X
+V9 = 0
+I = 0x278                   Rocket pattern
+show 6@v7v8
+i = h27e            Step 5: UFO pattern
+show 3@V5V6                 Erase UFO
+V0 = RND h3
+V5 += V0
