@@ -40,3 +40,16 @@ skip Vf eQ h0
 go h262                     Step 12
 v0=3               Step 10:
 time = v0
+skip v8 eq 0
+goto h226                   Step 12
+do h26a            Step 11: Erase score
+I = h278                    Rocket pattern
+show 6@V7V8                 Erase rocket
+v1 += va                    Score += VA
+go h210                     Step 2
+va=1               Step 12:
+v0=3
+TONE=V0
+go h258                     Step 11
+I=h2a0             SSS:     3 byte work area
+MI=V1 (3-digit binary-coded decimal)

@@ -61,6 +61,8 @@ assembly_instructions = [
         AssemblyInstruction('EXA1', r'^[\s]*[Ss][Kk][Ii][Pp][\s;:]+[Vv](?P<X>[a-fA-F\d]{1})[\s]*([Nn][Ee]|!=)[\s]*[Kk]([Ee][Yy]){0,1}'),
         AssemblyInstruction('FX07', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*=[\s]*([Tt][Ii][Mm][Ee][Rr]{0,1}|[Dd][Ee][Ll][Aa][Yy])'),
         AssemblyInstruction('FX15', r'^[\s]*([Tt][Ii][Mm][Ee][Rr]{0,1}|[Dd][Ee][Ll][Aa][Yy])[\s]*=[\s]*[Vv](?P<X>[a-fA-F\d]{1})'),
+        AssemblyInstruction('FX18', r'^[\s]*([Tt][Oo][Nn][Ee])[\s]*=[\s]*[Vv](?P<X>[a-fA-F\d]{1})'),
+        AssemblyInstruction('FX33', r'^[\s]*[Mm][Ii]=[\s]*[Vv](?P<X>[a-fA-F\d]{1})'),
         ]
 
 
