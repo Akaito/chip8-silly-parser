@@ -1,9 +1,9 @@
 VA ^= VB
-VA = VA ^ VB
-VA = VA xor VB
 VA &= VB
-VA = VA & VB
-VA = VA and VB
 VA |= VB
-VA = VA | VB
-VA = VA or VB
+VC = VD
+VA -= VB
+skip VD == VE
+V4 = KEY
+I += V5
+MI = V0:V7
