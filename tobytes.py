@@ -57,9 +57,15 @@ assembly_instructions = [
         AssemblyInstruction('7XNN', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*\+=[\s]*(?P<NN>(h|0x){0,1}[a-fA-F\d]+)'),
         AssemblyInstruction('7XNN', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*=[\s]*[Vv]\1[\s]*\+[\s]*(?P<NN>(h|0x){0,1}[a-fA-F\d]+)'),
         # TODO : 8XY0
-        # TODO : 8XY1
-        # TODO : 8XY2
-        # TODO : 8XY3
+        AssemblyInstruction('8XY1', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*\|=[\s]*[Vv](?P<Y>[a-fA-F\d]{1})'),
+        AssemblyInstruction('8XY1', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*\=[\s]*[Vv]\1[\s]*\|[\s]*[Vv](?P<Y>[a-fA-F\d]{1})'),
+        AssemblyInstruction('8XY1', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*\=[\s]*[Vv]\1[\s]*[Oo][Rr][\s]*[Vv](?P<Y>[a-fA-F\d]{1})'),
+        AssemblyInstruction('8XY2', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*&=[\s]*[Vv](?P<Y>[a-fA-F\d]{1})'),
+        AssemblyInstruction('8XY2', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*\=[\s]*[Vv]\1[\s]*&[\s]*[Vv](?P<Y>[a-fA-F\d]{1})'),
+        AssemblyInstruction('8XY2', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*\=[\s]*[Vv]\1[\s]*[Aa][Nn][Dd][\s]*[Vv](?P<Y>[a-fA-F\d]{1})'),
+        AssemblyInstruction('8XY3', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*\^=[\s]*[Vv](?P<Y>[a-fA-F\d]{1})'),
+        AssemblyInstruction('8XY3', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*\=[\s]*[Vv]\1[\s]*\^[\s]*[Vv](?P<Y>[a-fA-F\d]{1})'),
+        AssemblyInstruction('8XY3', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*\=[\s]*[Vv]\1[\s]*[Xx][Oo][Rr][\s]*[Vv](?P<Y>[a-fA-F\d]{1})'),
         AssemblyInstruction('8XY4', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*\+=[\s]*[Vv](?P<Y>[a-fA-F\d]{1})'),
         AssemblyInstruction('8XY4', r'^[\s]*[Vv](?P<X>[a-fA-F\d]{1})[\s]*=[\s]*[Vv]\1[\s]*\+[\s]*[Vv](?P<Y>[a-fA-F\d]{1})'),
         # TODO : 8XY5

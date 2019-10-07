@@ -1,0 +1,9 @@
+VA ^= VB
+VA = VA ^ VB
+VA = VA xor VB
+VA &= VB
+VA = VA & VB
+VA = VA and VB
+VA |= VB
+VA = VA | VB
+VA = VA or VB
